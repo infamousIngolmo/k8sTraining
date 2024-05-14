@@ -18,11 +18,11 @@ spec:
         - image: bootdotdev/synergychat-testram:latest
           name: synergychat-testram
           resources:
-            #requests:
-              #memory: "64Mi"
+            requests:
+              memory: "40000Mi"
               #cpu: "50m"
             limits:
-              memory: "256Mi"
+              memory: "40000Mi"
               #cpu: "50m"
           envFrom:
             - configMapRef:
